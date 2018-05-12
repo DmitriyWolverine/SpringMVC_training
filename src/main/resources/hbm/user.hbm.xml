@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="by.htp.springmvc.bean.users.User" table="users">
+	
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="increment" />
+		</id>
+		
+		<property name="login" type="string">
+			<column name="login" />		
+		</property>
+		
+		<property name="password" type="string">
+			<column name="password" />		
+		</property>
+		
+		<property name="role" type="int">
+			<column name="role" />		
+		</property>
+		
+	</class>
+	
+</hibernate-mapping>
